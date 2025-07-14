@@ -3,8 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      =npm install
+      - npm install
   build:
     commands:
-      =npm run build
+      - npm run build
+artifacts:
+  files: 
+  - "**/*"
+  base-directory: "dist"
   
